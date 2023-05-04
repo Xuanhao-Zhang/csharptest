@@ -32,6 +32,10 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
+- script: |
+    D:\a\1\s\ConsoleCSharpTest\bin\Release\netcoreapp3.1\ConsoleCSharpTest.exe
+  displayName: 'Test C sharp'
+
 #- task: DotNetCoreCLI@2
 #  displayName: Build
 #  inputs:
