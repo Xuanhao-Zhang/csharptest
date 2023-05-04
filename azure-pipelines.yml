@@ -27,16 +27,15 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: VSTest@2
-  inputs:
-    platform: '$(buildPlatform)'
-    configuration: '$(buildConfiguration)'
+#- task: VSTest@2
+#  inputs:
+#    platform: '$(buildPlatform)'
+#    configuration: '$(buildConfiguration)'
 
 - task: CmdLine@2
   inputs:
     script: |
       echo Do exe
-      
       D:\a\1\s\ConsoleCSharpTest\bin\Release\netcoreapp3.1\ConsoleCSharpTest.exe
 
 #- task: DotNetCoreCLI@2
